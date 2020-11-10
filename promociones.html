@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>cines</title>
+
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/mdb-pro.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/mdb.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="skin-light">
+
+	<header class="fixed-top shadow">
+
+<nav class="navbar navbar-expand-lg navbar-light black jumbotron border-bottom mb-0">
+<div class="container-xl py-2">
+<div class="col-lg-3 col-xl-2 mt-3 mt-lg-0 d-flex justify-content-between">
+  <a href="index.html"> 
+		<h4 class="text-secondary tintal">Cines<strong class="text-light font-weight-bold">tintal</strong></h4>
+  </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon bg-secondary"></span>
+  </button>
+</div>
+ <div class="col-md-7 col-lg-5 col-xl-6" id="Buscar">
+	<form action="index_submit" method="" accept-charset="utf-8">
+	<div class="md-form md-outline input-group md-input-group w-100">
+	<input type="text"placeholder="Buscar pelicula" class="form-control mb-0">
+	<div class="input-group-append">
+    <button type="submit" class="btn btn-secondary btn-md px-3"><i class="fas fa-search"></i> Buscar</button>
+					</div>
+					</div>
+				</form>
+			</div>
+  <div class="collapse navbar-collapse col-md-5 col-lg-4 col-xl-4 mt-2 mb-1 mb-md-0 pb-2 pb-md-0" id="navbarSupportedContent">
+
+	    	<!-- Iconos -->
+<div class="d-flex justify-content-center justify-content-lg-start text-center menu">
+	   	<div class="mr-3">
+	    	<a href="cartelera.html" role="buttom"> 
+	    				<div>
+	    <img src="img/iconos/movies_icon-icons.com_76714.ico"class="icono" width="32" alt="">
+	<span class="counter counter-floating counter-lg-icon position-absolute ml-n1 mt-1"><strong>2</strong></span>
+	    			   </div>
+	 <small class="text-light text-capitalize">cartelera</small>
+	    			</a>
+	    		</div> <!--Primer Icono-->
+	   	<div class="mr-3">
+	    	<a href="estrenos.html" role="buttom"> 
+	    				<div>
+	    	<img src="img/iconos/3d_movies_folder_20527.ico" class="icono" width="32" alt="">
+	<span class="counter counter-floating counter-lg-icon position-absolute ml-n1 mt-1"><strong>12</strong></span>
+	    			   </div>
+	 <small class="text-light text-capitalize">próximos estrenos</small>
+	    			</a>
+	    		</div> <!--segundo Icono-->
+	    			<div>
+	    	<a href="#!" role="buttom"> 
+	    				<div>
+	   <img src="img/iconos/Movies_folder_file_10321.ico" class="icono" width="32" alt="">
+	<span class="counter counter-floating counter-lg-icon position-absolute ml-n1 mt-1"><strong>3</strong></span>
+	    			   </div>
+	 <small class="text-light text-capitalize">promociones</small>
+	    			</a>
+	    		</div> <!--tercer Icono-->
+	   </div>
+	</div>
+	     <!--Contenedor de Iconos -->
+  
+  </div>
+</nav>
+
+</header>
+
+<section class="pt-2">
+<article class="mb-xl-0 bg-light radius mt-5 pt-5">
+				<!--Carrusel -->
+<div class="border-cines">
+  <div class="imagenes-encabezado">
+    <div class="d-flex justify-content-between flex-md-wrap">
+      
+<a href="#">
+      <img src="img/mulan-1487d6.jpg" class="d-block img-fluid m-2" width="140" alt="...">
+</a>
+
+<a href="#">
+    <img src="img/the_invisible_man-559243209-large.jpg" class="d-block img-fluid m-2" width="140" alt="...">
+   </a>
+
+   <a href="#">
+      <img src="img/Scoob-2020-scoobert-doo-43251476-800-1200.jpg" class="d-block img-fluid m-2" width="138" alt="...">
+   </a>
+
+   <a href="#">
+   	  <img src="img/5e022a02a97ed87e3ded46e2.jpeg" class="d-block img-fluid m-2" width="145" alt="...">
+   </a>
+
+   <a href="#">
+   	  <img src="img/1062590.jpg" class="d-block img-fluid m-2" width="140" alt="...">
+   </a>
+
+   <a href="#">
+   	  <img src="img/bad1-1.jpg" class="d-block img-fluid m-2" width="145" alt="...">
+   </a>
+
+    </div>
+  </div>
+</div>
+	</article> <!--peliculas-->
+
+<div class="mt-3">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/promociones/cine-familiar.jpg" class="d-block" width="970" alt="portada">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="carrusel-title">
+        </h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+     <div class="d-flex">
+      
+        <p class="text-center m-2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+      <img src="img/bad-boys-siempre.jpg" class="d-block" width="738" alt="">
+      <div class="carousel-caption d-none d-md-block">
+    <h5 class="carrusel-title text-capitalize">bad boys: para siempre llega a los cines
+        </h5>      
+     </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+     <div class="d-flex">
+        <div class="bg-primary">
+        <p class="text-center m-2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+     </div>
+      <img src="img/malefica-2-poster-disney-.jpg" class="d-block" width="760" alt="">
+      <div class="carousel-caption d-none d-md-block">
+    <h5 class="carrusel-title text-capitalize">malefica 2, la historia continúa con más...
+        </h5>      
+     </div>
+      </div>
+    </div>
+     <div class="carousel-item">
+      <div class="d-flex">
+      <div style="background-color: darkred">
+        <p class="text-center m-2">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+      <img src="img/mulan.jpg" class="d-block" width="760" alt="">
+      <div class="carousel-caption d-none d-md-block">
+    <h5 class="carrusel-title text-capitalize">mulan, el nuevo live action de disney, ya está aqui.
+        </h5>      
+     </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+</div>
+
+<!--promociones -->
+<main class="container mt-3">
+	
+<h2 class="text-capitalize text-center text-light border-bottom border-warning">promociones</h2>
+	<div class="grid-colums-2 m-3 mt-5">
+
+	</div>
+</main>
+</section>
+<div class="space bg-light">
+	<br>
+</div>
+<footer class="page-footer border-top border-dark font-small black mt-2">
+	<div class="container pt-5">
+		<div class="row text-center">
+			<div class="col-md-8 col-lg-7 mx-auto">
+				<h6>Ingrese su email para recibir notificaciones de nuestras promociones y peliculas de estreno.</h6>
+
+		<form accept-charset="utf-8" class="form-row">
+
+			<div class="col-md-8">
+			<div class="md-form md-outline">
+		
+		<label data-error="wrong" data-success="right" for="Form-email">E-mail</label>
+
+		<input class="form-control email" type="email" id="Form-email">
+
+		<small id="Form-email" class="form-text text-muted mb-4 text-left">Esta información no será distribuida a terceros, garantizamos su seguridad y comodidad.</small>
+			</div>
+			</div>	
+					<div class="col-md-4">
+		<button type="button" data-toggle="modal" data-target="#incripcion" class="btn btn-block btn-secondary btn-md mt-4" id="envio-correo">Suscribirse</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div> <!--/ footer 1 -->
+
+
+<!-- Model de inscripcion de datos -->
+
+<div class="modal fade" id="incripcion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog border border-primary">
+    <div class="modal-content black">
+      <div class="modal-header">
+        <h5 class="modal-title text-light text-center text-capitalize" id="exampleModalLabel">ingrese los datos necesarios para completar la suscripción.</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+          <div class="form-group">
+            <label for="name" class="col-form-label text-capitalize text-light">nombre completo:</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="edad" class="col-form-label text-capitalize text-light">edad:</label>
+            <input type="number" class="form-control" id="edad" min="18" max="112" required>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Enviar Datos</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- footer 2 -->
+<div class="container text-center text-md-left pt-4 pt-md-5">
+	
+	<div class="row mt-1 mt-md-0 mb-4 mb-md-0">
+		
+		<div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+			
+			<h5>Patrocinio</h5>
+
+		<hr class="color-success mb-4 mt-0 d-inline-block mx-auto w-60">
+
+		<ul class="list-unstyled foot-desc">
+			<li class="mb-2">
+                  <a href="#!" class="font-italic">Pepsi</a>
+              </li>
+
+              <li class="mb-2">
+                  <a href="#!" class="font-italic">Sammy</a>
+              </li>
+
+              <li class="mb-2">
+                  <a href="#!" class="font-italic">Nestle</a>
+              </li>
+              <li class="mb-2">
+                  <a href="#!" class="font-italic">kfc</a>
+              </li>
+		</ul>
+		</div>
+
+		<hr class="clearfix w-100 d-md-none">
+
+		<div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+			
+			<h5>Servicios</h5>
+
+		<hr class="color-secondary mb-4 mt-0 d-inline-block mx-auto w-60">
+
+		<ul class="list-unstyled foot-desc">
+			<li class="mb-2">
+    <a href="#!" class="font-italic" data-toggle="modal" data-target="#reportar">Reportar/Quejas</a>
+              </li>
+
+
+<!-- Model de reporte -->
+
+<div class="modal fade" id="reportar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog border border-warning">
+    <div class="modal-content black">
+      <div class="modal-header bg-dark">
+        <h5 class="modal-title text-light text-center" id="exampleModalLabel">Solicitud de Reportes y Quejas:</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+     <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+          <div class="form-group">
+            <label for="name" class="col-form-label text-capitalize text-light">nombre completo:</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="correo" class="col-form-label text-capitalize text-light">correo:</label>
+            <input type="email" class="form-control" id="correo" required>
+          </div>
+          <div class="form-group">
+      <label for="tipo" class="col-form-label text-capitalize text-light">Tipo:</label>
+      <select id="tipo" class="w-100 p-2">
+      <option value="0" selected disabled>--Seleccione--</option>
+    <option value="reporte">Reporte</option>
+    <option value="queja">Queja</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="motivo" class="col-form-label text-capitalize text-light">Descripción:</label>
+           <textarea name="motivo" id="motivo" class="w-100"></textarea>
+          </div>
+        </form>
+        <div class="bg-white mt-2" id="enviar-solicitud"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Enviar Solicitud</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--/modal reportar-->
+
+              <li class="mb-2">
+       <a href="#!" data-toggle="modal" data-target="#compra">Comprar Boleto</a>
+              </li>
+
+              <li class="mb-2">
+ <a href="#!" data-toggle="modal" data-target="#donaciones">Colaboraciones y Donativos</a>
+              </li>
+              <li class="mb-2">
+        <a href="#!" href="promociones.html">Promociones</a>
+              </li>
+		</ul>
+		</div>
+
+		<hr class="clearfix w-100 d-md-none">
+                    <!-- Grid column -->
+       <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+                        <!-- Links -->
+                        <h5>Contacto</h5>
+    <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+
+                   <ul class="fa-ul foot-desc ml-4">
+       <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>Aragua, Maracay-Centro
+       </li>
+                            
+      <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>+58 424 213 4283</li>
+     
+      <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>cinestintales@hotmail.com</li>
+     
+      <li><span class="fa-li"><i class="far fa-clock"></i></span>Lunes - Sábado: 8-23</li>
+                        </ul>
+
+                    </div>
+
+	</div>
+</div>
+<div class="footer-copyright text-center py-3">&copy 2020 Copyright by <a href="#">Wilmer Parra</a>
+           
+</div>
+
+</footer>
+
+<!-- Model de compra de boleto -->
+
+<div class="modal fade" id="compra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+<div class="modal-dialog modal-xl border">
+    <div class="modal-content black">
+      <div class="modal-header">
+       
+       <h4 class="text-secondary tintal mr-5">Cines<strong class="text-light font-weight-bold">tintal</strong></h4>
+
+    <h5 class="modal-title text-light font-italic text-center text-capitalize ml-5 pl-5" id="exampleModalLabel">compra de boletos</h5>
+       
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+     <span aria-hidden="true" class="text-white">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form class="d-flex justify-content-center">
+
+        <fieldset class="m-2 border border-warning">
+          <legend class="text-capitalize text-center text-warning">elección de boleto</legend>
+       
+          <div class="form-group m-2">
+            <label for="pelicula" class="col-form-label text-capitalize text-light">elija la pelicula:</label>
+           <select id="pelicula" class="w-100 p-2 text-capitalize" id="pelicula">
+           <option selected disabled>--Seleccione--</option>
+           <option value="" class="text-capitalize">bad boys: para siempre</option>
+            <option value="" class="text-capitalize">el hombre invisible</option>
+           </select>
+          </div>
+           <div class="form-group m-2">
+            <label for="cantidadbolet" class="col-form-label text-capitalize text-light">cantidad de boletos:</label>
+            <input type="number" class="form-control" id="cantidadbolet" min="1" max="280">
+          </div>
+           <div class="form-group m-2">
+        <label for="total" class="col-form-label text-capitalize text-light">monto:</label>
+           <input type="number" class=" form-control" id="total">
+          </div>
+          <div class="ml-5 mt-4" id="enviado">
+          	<img id="proceso" src="gif/enviando.gif" width="250">
+          </div>
+        </fieldset>
+
+        <fieldset class="m-2">
+          <legend class="text-capitalize text-center text-success">datos para la compra</legend>
+          <div class="form-group m-2">
+      <label for="titular"  class="col-form-label text-capitalize text-light">titular de tarjeta:</label>
+       <input type="text" class=" text-capitalize form-control" id="titular">
+          </div>
+          <div class="form-group">
+            <label for="email" class="col-form-label text-capitalize text-light">ingrese su correo:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group m-2">
+      <label for="tipo" class="col-form-label text-capitalize text-light">Tipo de tarjeta:</label>
+      <select id="tipotarget" class="w-100 p-2 form-control">
+      <option value="0" selected disabled>--Seleccione--</option>
+    <option value="mastercard">MasterCard</option>
+    <option value="maestro">Maestro</option>
+    <option value="visa">Visa</option>
+    <option value="vip">VIP</option>
+            </select>
+          </div>
+          <div class="form-group m-2">
+        <label for="tarjeta"  class="col-form-label text-capitalize text-light">número de tarjeta:</label>
+           <input type="text" class=" form-control" id="tarjeta" onkeypress="return validarNum(event)">
+          </div>
+           <div class="form-group m-2">
+        <label for="contraseña"  class="col-form-label text-capitalize text-light">clave:</label>
+           <input type="password" class=" form-control" id="contraseña">
+          </div>
+        </fieldset>
+        </form>
+        <div class="bg-white mt-2" id="enviar-solicitud"></div>
+      </div>
+      <div class="modal-footer">
+      	<form id="formulary">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+        <button type="submit" class="btn btn-success text-capitalize" id="comprar-boleto-directo">comprar</button>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--/modal comprar pelicula o boleto-->
+
+<!-- codigo js -->
+	<script src="js/app.js" type="text/javascript"></script>
+
+	<script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+
+	<script src="js/popper.min.js" type="text/javascript"></script>
+
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+	<script src="js/mdb.min.js" type="text/javascript"></script>
+
+	<script src="js/mdb.e.min.js" type="text/javascript"></script>
+
+	<script src="js/all.js" type="text/javascript"></script>
+
+  <script src="js/animacion.js" type="text/javascript"></script>
+</body>
+</html>

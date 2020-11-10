@@ -1,0 +1,235 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: black;
+}
+
+p{
+	color: white;
+	font-size: 1.4rem;
+}
+
+a{
+	text-decoration: none;
+}
+
+.tintal{
+	font-family: Georgia, serif;
+	font-style: italic;
+}
+
+.tintal strong{
+
+}
+
+.icono:hover{
+	transition: all .3s ease-in-out;
+	width: 35px;
+
+}
+.border-cines{
+
+	border-bottom: .2rem solid indigo;
+}
+
+.imagenes-encabezado{
+	background-color: black;
+}
+.imagenes-encabezado img{
+	border: .2rem solid gold;
+}
+
+@media(max-width: 774px) {
+	.imagenes-encabezado{
+		margin-top: 3.3rem;
+		flex-wrap: wrap;
+	}
+}
+
+/*grid column*/
+.grid-colums{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+
+.grid-colums-2{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.grid-colums-2 figure{
+	margin-top: 2rem;
+}
+
+@media(min-width:780px){
+	.grid-colums{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-gap: 1rem;
+	}
+
+	.grid-colums-2{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-gap: 3rem;
+}
+	.grid-colums-2 figure{
+		margin: 0;
+	}
+}
+
+/* efecto de imagen rotatorio */
+figure{
+	display: flex;
+	margin-left: 2rem;
+}
+
+figure .end p{
+	font-family: 'Open sans', sans-serif;
+	font-size: .8rem;
+}
+
+figure .end h3{
+	font-size: 1.3rem;
+}
+@media(min-width:780px){
+main a{
+	display: inline-block;
+}
+
+.contenedor-target:hover figure{
+	-webkit-transform: perspective(600px) rotateY(180deg);
+	-moz-transform: perspective(600px) rotateY(180deg);
+	transform: perspective(600px) rotateY(180deg);
+}
+
+figure{
+	margin: 0;
+	position: relative;
+	transition: all .5s ease;
+	transform-style: preserve-3d;
+	transform: perspective(600px) rotateY();
+}
+
+figure .front, 
+figure .end{
+
+	transition: all .5s ease;
+}
+figure .front{
+	display: block;
+	backface-visibility: visible; /*al voltear se ve la imagen y con visiby no*/
+}
+
+figure .end{
+	position: absolute;
+	top: 0;
+	padding: 20px;
+	color: #ffffff;
+	background-color: rgba(1, 1, 1, .8);
+	transform: perspective(600px) rotateY(180deg);
+	backface-visibility: hidden;
+	overflow: auto;
+}
+}
+
+figure .end{
+	margin-left: 1rem;
+
+}
+hr{
+	height: 2px;
+	background-color: white;
+
+}
+figure .end button{
+	
+	border: 1px solid goldenrod;
+	float: right;
+	background-color: black;
+
+}
+figure .end button:hover{
+	transition: all .3s ease-in-out;
+	background-color: goldenrod;
+
+	color: black;
+}
+
+/*detalle movie*/
+
+.detalle-movie small{
+	font-family: 'Lucida sans', sans-serif;
+}
+.detalle-movie form{
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+  margin-top: -.5rem;
+}
+
+.detalle-movie form label{
+  font-size: 20px;
+}
+
+.detalle-movie input[type="radio"] {
+  display: none;
+}
+
+.detalle-movie label{
+  color: lightgray;
+}
+
+.detalle-movie .clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.detalle-movie label:hover,
+.detalle-movie label:hover ~ label {
+  color: goldenrod;
+}
+
+.detalle-movie input[type="radio"]:checked ~ label {
+  color: goldenrod;
+}
+/* movie estreno*/
+
+.text-movie{
+	font-size: 1rem;
+}
+
+.text-movie span{
+	font-weight: bold;
+}
+
+/* categoria */
+.category{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+@media(min-width: 768px){
+.category{
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	margin: 1rem;
+	border-top: 2px solid purple;
+}
+}
+
+.category a img:hover{
+	transition: all .4s ease;
+	width: 117px;
+	border-bottom: 1px solid goldenrod;
+}
