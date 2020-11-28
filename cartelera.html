@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>cines</title>
+	<title>CinesTintal</title>
 
 	<link rel="stylesheet" type="text/css" href="css/all.min.css">
 
@@ -134,11 +134,11 @@
 	
 	<p class="text-light text-movie text-capitalize">género: <span>Acción, Drama, Comedia</span></p>
 
-	<p class="text-light text-movie text-capitalize">duración: <span></span></p>
+	<p class="text-light text-movie text-capitalize">duración: <span>123 min</span></p>
 
 	<p class="text-light text-movie text-capitalize">clasificación: <span>s</span></p>
 
-	<p class="text-light text-movie text-capitalize">director: <span></span></p>
+	<p class="text-light text-movie text-capitalize">director: <span>Bilall Fallah, Adil El Arbi</span></p>
 		<p class="text-light text-movie">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</figcaption>
 	</figure>
@@ -188,7 +188,7 @@
 <div class="d-flex justify-content-between">
 <div class="form-group">
    <label for="titular-pago" class="col-form-label text-capitalize text-light">titular de tarjeta:</label>
-       <input type="text" class=" text-capitalize form-control titular-pago" id="titular-pago">
+       <input type="text" class=" text-capitalize form-control titular-pago" id="titular-pago" onkeypress="return validarLetra(event)">
           </div>
           <div class="form-group">
             <label for="correo" class="col-form-label text-capitalize text-light">ingrese su correo:</label>
@@ -208,7 +208,7 @@
           </div>
         <div class="form-group">
         <label for="num-tarjeta"  class="col-form-label text-capitalize text-light">número de tarjeta:</label>
-           <input type="text" class="form-control num-tarjeta" id="num-tarjeta">
+           <input type="text" class="form-control num-tarjeta" id="num-tarjeta" onkeypress="return validarNum(event)">
           </div>
         </div>
     <div class="d-flex justify-content-between">
@@ -242,13 +242,13 @@
 	<figcaption class="ml-4">
 		<h4 class="text-light text-center text-capitalize border-bottom border-warning">el hombre invisible</h4>
 	
-	<p class="text-light text-movie text-capitalize">género: <span>Drama, terror</span></p>
+	<p class="text-light text-movie text-capitalize">género: <span>Suspenso, Drama, Ciencia ficción</span></p>
 
-	<p class="text-light text-movie text-capitalize">duración: <span>b</span></p>
+	<p class="text-light text-movie text-capitalize">duración: <span>124 min</span></p>
 
 	<p class="text-light text-movie text-capitalize">clasificación: <span></span></p>
 
-	<p class="text-light text-movie text-capitalize">director: <span></span></p>
+	<p class="text-light text-movie text-capitalize">director: <span>Leigh Whannell</span></p>
 		<p class="text-light text-movie">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</figcaption>
 	</figure>
@@ -297,7 +297,7 @@
 <div class="d-flex justify-content-between">
 <div class="form-group">
    <label for="titular-pago" class="col-form-label text-capitalize text-light">titular de tarjeta:</label>
-       <input type="text" class="text-capitalize form-control titular-pago" id="titular-pago">
+       <input type="text" class="text-capitalize form-control titular-pago" id="titular-pago" onkeypress="return validarLetra(event)">
           </div>
           <div class="form-group">
             <label for="correo" class="col-form-label text-capitalize text-light">ingrese su correo:</label>
@@ -317,7 +317,7 @@
           </div>
         <div class="form-group">
         <label for="num-tarjeta"  class="col-form-label text-capitalize text-light">número de tarjeta:</label>
-           <input type="text" class="form-control num-tarjeta" id="num-tarjeta">
+           <input type="text" class="form-control num-tarjeta" id="num-tarjeta" onkeypress="return validarNum(event)">
           </div>
         </div>
     <div class="d-flex justify-content-between">
@@ -352,12 +352,12 @@
 	
 	<p class="text-light text-movie text-capitalize">género: <span>Drama, Comedia</span></p>
 
-	<p class="text-light text-movie text-capitalize">duración: <span></span></p>
+	<p class="text-light text-movie text-capitalize">duración: <span>101 min.</span></p>
 
 	<p class="text-light text-movie text-capitalize">clasificación: <span>s</span></p>
 
-	<p class="text-light text-movie text-capitalize">director: <span></span></p>
-		<p class="text-light text-movie">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p class="text-light text-movie text-capitalize">director: <span>Stephen Gaghan</span></p>
+		<p class="text-light text-movie">Después de perder a su mujer hace siete años, el excéntrico Dr. John Dolittle, un reputado doctor y veterinario, se encerró en sí mismo tras los muros de su mansión con la única compañía de su colección de animales exóticos...</p>
 	</figcaption>
 	</figure>
 	
@@ -405,11 +405,11 @@
 <div class="d-flex justify-content-between">
 <div class="form-group">
    <label for="titular-pago" class="col-form-label text-capitalize text-light">titular de tarjeta:</label>
-       <input type="text" class=" text-capitalize form-control" id="titular-pago">
+       <input type="text" class="text-capitalize form-control" id="titular-pago" onkeypress="return validarLetra(event)">
           </div>
           <div class="form-group">
             <label for="correo" class="col-form-label text-capitalize text-light">ingrese su correo:</label>
-            <input type="email" class="form-control" id="correo" required>
+            <input type="email" class="form-control" id="correo">
           </div>
        </div>
   <div class="d-flex justify-content-between border-top border-success">
@@ -425,7 +425,7 @@
           </div>
         <div class="form-group">
         <label for="num-tarjeta"  class="col-form-label text-capitalize text-light">número de tarjeta:</label>
-           <input type="text" class=" form-control" id="num-tarjeta">
+           <input type="text" class=" form-control" id="num-tarjeta" onkeypress="return validarNum(event)">
           </div>
         </div>
     <div class="d-flex justify-content-between">
@@ -448,117 +448,6 @@
   </div>
 </div>
   <!--/model 3 -->
-
-<figure class="border-bottom border-primary pb-2">
-	
-	<div>
-	<img src="img/la-bruja.webp"class="border border-secondary" height="260" alt="">
-	<button type="button" class="mt-3 ml-3 text-capitalize btn btn-outline-warning" data-toggle="modal" data-target="#la-bruja">comprar boleto</button>
-</div>
-	<figcaption class="ml-4">
-	<h4 class="text-light text-center text-capitalize border-bottom border-warning">la bruja</h4>
-	
-	<p class="text-light text-movie text-capitalize">género: <span>terror</span></p>
-
-	<p class="text-light text-movie text-capitalize">duración: <span></span></p>
-
-	<p class="text-light text-movie text-capitalize">clasificación: <span>c</span></p>
-
-	<p class="text-light text-movie text-capitalize">director: <span></span></p>
-		<p class="text-light text-movie">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</figcaption>
-	</figure>
-		
-  <!--model 4-->
-
-
-    <div class="modal fade" id="la-bruja" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-  <div class="modal-dialog modal-lg border border-primary">
-    <div class="modal-content black">
-      <div class="modal-header">
-        <h5 class="modal-title text-light text-center text-capitalize" id="exampleModalLabel1">la bruja</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body d-flex justify-content-center">
-      
-      <div>
-      <img src="img/la-bruja.webp" class="border border-danger" height="300" alt="">
-         
-  <div class="mt-3" id="enviando-compra"></div>
-      </div>
-     
-        <div class="container text-light detalle-movie">
-        <small class="text-capitalize">Idiomas: <strong class="text-primary">Inglés, Sub-Español</strong></small>
-        <br>
-        <small>Precio: <strong class="text-primary">720Bs</strong></small>
-        <hr>
-   <small>Vistas:</small>
-  <div class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100" style="width: 88%">10.219.944</div>
-</div>
-<br>
-<div class="d-flex justify-content-between border-bottom border-secondary mb-1">
-          
- <div class="form-group">
-            <label for="cantidad-boleto" class="col-form-label text-capitalize text-light">cantidad de boletos:</label>
-            <input type="number" class="form-control cantidad-boleto" id="cantidad-boleto" required min="1" max="280">
-   </div>
-
-    <div class="form-group">
-        <label for="monto" class="col-form-label text-capitalize text-light">monto:</label>
-           <input type="number" class=" form-control" id="monto">
-   </div>
-</div>
- 
-<div class="d-flex justify-content-between">
-<div class="form-group">
-   <label for="titular-pago" class="col-form-label text-capitalize text-light">titular de tarjeta:</label>
-       <input type="text" class=" text-capitalize form-control" id="titular-pago">
-          </div>
-          <div class="form-group">
-            <label for="correo" class="col-form-label text-capitalize text-light">ingrese su correo:</label>
-            <input type="email" class="form-control" id="correo" required>
-          </div>
-       </div>
-  <div class="d-flex justify-content-between border-top border-success">
-          <div class="form-group">
-      <label for="tipo" class="col-form-label text-capitalize text-light">Tipo de tarjeta:</label>
-      <select id="tipo-tarjeta" class="w-100 p-2 form-control">
-      <option value="0" selected disabled>--Seleccione--</option>
-    <option value="mastercard">MasterCard</option>
-    <option value="maestro">Maestro</option>
-    <option value="visa">Visa</option>
-    <option value="vip">VIP</option>
-            </select>
-          </div>
-        <div class="form-group">
-        <label for="num-tarjeta"  class="col-form-label text-capitalize text-light">número de tarjeta:</label>
-           <input type="text" class=" form-control" id="num-tarjeta">
-          </div>
-        </div>
-    <div class="d-flex justify-content-between">
-           <div class="form-group">
-        <label for="clave"  class="col-form-label text-capitalize text-light">clave:</label>
-           <input type="password" class=" form-control" id="clave">
-          </div>
-          <div class="form-group">
-        <label for="clave2"  class="col-form-label text-capitalize text-light">confirmar clave:</label>
-           <input type="password" class=" form-control" id="clave2">
-          </div>
-      </div>
-  </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-outline-warning">comprar ticket</button>
-      </div>
-    </div>
-  </div>
-</div>
-  <!--/model 4-->
-
 	<figure class="pb-3 border-bottom border-primary">
 	
 	<div>
@@ -571,11 +460,11 @@
 	
 	<p class="text-light text-movie text-capitalize">género: <span>Acción, Drama</span></p>
 
-	<p class="text-light text-movie text-capitalize">duración: <span></span></p>
+	<p class="text-light text-movie text-capitalize">duración: <span>90 min</span></p>
 
 	<p class="text-light text-movie text-capitalize">clasificación: <span>b</span></p>
 
-	<p class="text-light text-movie text-capitalize">director: <span></span></p>
+	<p class="text-light text-movie text-capitalize">director: <span>Craig Zobel</span></p>
 		<p class="text-light text-movie">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</figcaption>
 	</figure>
@@ -625,11 +514,11 @@
 <div class="d-flex justify-content-between">
 <div class="form-group">
    <label for="titular-pago" class="col-form-label text-capitalize text-light">titular de tarjeta:</label>
-       <input type="text" class=" text-capitalize form-control" id="titular-pago">
+       <input type="text" class="text-capitalize form-control titular-pago" id="titular-pago" onkeypress="return validarLetra(event)">
           </div>
           <div class="form-group">
             <label for="correo" class="col-form-label text-capitalize text-light">ingrese su correo:</label>
-            <input type="email" class="form-control" id="correo" required>
+            <input type="email" class="form-control" id="correo">
           </div>
        </div>
   <div class="d-flex justify-content-between border-top border-success">
@@ -645,7 +534,7 @@
           </div>
         <div class="form-group">
         <label for="num-tarjeta"  class="col-form-label text-capitalize text-light">número de tarjeta:</label>
-           <input type="text" class=" form-control" id="num-tarjeta">
+           <input type="text" class="form-control" id="num-tarjeta" onkeypress="return validarNum(event)">
           </div>
         </div>
     <div class="d-flex justify-content-between">
@@ -681,12 +570,12 @@
 	
 	<p class="text-light text-movie text-capitalize">género: <span>Acción, Drama, terror</span></p>
 
-	<p class="text-light text-movie text-capitalize">duración: <span></span></p>
+	<p class="text-light text-movie text-capitalize">duración: <span>90 min.</span></p>
 
 	<p class="text-light text-movie text-capitalize">clasificación: <span>c</span></p>
 
-	<p class="text-light text-movie text-capitalize">director: <span></span></p>
-		<p class="text-light text-movie">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p class="text-light text-movie text-capitalize">director: <span>Justin Dec</span></p>
+		<p class="text-light text-movie">Quinn, una joven enfermera, descarga una aplicación para el móvil llamada 'Countdown', que puede predecir el momento exacto en el que una persona va a morir...</p>
 	</figcaption>
 	</figure>
 
@@ -735,11 +624,11 @@
 <div class="d-flex justify-content-between">
 <div class="form-group">
    <label for="titular-pago" class="col-form-label text-capitalize text-light">titular de tarjeta:</label>
-       <input type="text" class=" text-capitalize form-control" id="titular-pago">
+       <input type="text" class=" text-capitalize form-control" id="titular-pago" onkeypress="return validarLetra(event)">
           </div>
           <div class="form-group">
             <label for="correo" class="col-form-label text-capitalize text-light">ingrese su correo:</label>
-            <input type="email" class="form-control" id="correo" required>
+            <input type="email" class="form-control" id="correo">
           </div>
        </div>
   <div class="d-flex justify-content-between border-top border-success">
@@ -755,7 +644,7 @@
           </div>
         <div class="form-group">
         <label for="num-tarjeta"  class="col-form-label text-capitalize text-light">número de tarjeta:</label>
-           <input type="text" class=" form-control" id="num-tarjeta">
+           <input type="text" class="form-control" id="num-tarjeta" onkeypress="return validarNum(event)">
           </div>
         </div>
     <div class="d-flex justify-content-between">
@@ -791,11 +680,11 @@
 	
 	<p class="text-light text-movie text-capitalize">género: <span>Acción, Drama, fantasía</span></p>
 
-	<p class="text-light text-movie text-capitalize">duración: <span></span></p>
+	<p class="text-light text-movie text-capitalize">duración: <span>118 min</span></p>
 
 	<p class="text-light text-movie text-capitalize">clasificación: <span>s</span></p>
 
-	<p class="text-light text-movie text-capitalize">director: <span></span></p>
+	<p class="text-light text-movie text-capitalize">director: <span>Joachim Ronning</span></p>
 		<p class="text-light text-movie">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</figcaption>
 	</figure>
@@ -833,23 +722,23 @@
           
  <div class="form-group">
             <label for="cantidad-boleto" class="col-form-label text-capitalize text-light">cantidad de boletos:</label>
-            <input type="number" class="form-control" id="cantidad-boleto" required min="1" max="280">
+            <input type="number" class="form-control" id="cantidad-boleto" min="1" max="280">
    </div>
 
     <div class="form-group">
         <label for="monto" class="col-form-label text-capitalize text-light">monto:</label>
-           <input type="number" class=" form-control" id="monto">
+           <input type="number" class="form-control" id="monto">
    </div>
 </div>
  
 <div class="d-flex justify-content-between">
 <div class="form-group">
    <label for="titular-pago" class="col-form-label text-capitalize text-light">titular de tarjeta:</label>
-       <input type="text" class=" text-capitalize form-control" id="titular-pago">
+       <input type="text" class="text-capitalize form-control tiular-pago" id="titular-pago" onkeypress="return validarLetra(event)">
           </div>
           <div class="form-group">
             <label for="correo" class="col-form-label text-capitalize text-light">ingrese su correo:</label>
-            <input type="email" class="form-control" id="correo" required>
+            <input type="email" class="form-control" id="correo">
           </div>
        </div>
   <div class="d-flex justify-content-between border-top border-success">
@@ -865,7 +754,7 @@
           </div>
         <div class="form-group">
         <label for="num-tarjeta"  class="col-form-label text-capitalize text-light">número de tarjeta:</label>
-           <input type="text" class=" form-control" id="num-tarjeta">
+           <input type="text" class=" form-control" id="num-tarjeta" onkeypress="return validarNum(event)">
           </div>
         </div>
     <div class="d-flex justify-content-between">
@@ -899,14 +788,14 @@
 	<figcaption class="ml-4">
 		<h4 class="text-light text-center text-capitalize border-bottom border-warning">muerte en el nilo</h4>
 	
-	<p class="text-light text-movie text-capitalize">género: <span>Acción</span></p>
+	<p class="text-light text-movie text-capitalize">género: <span>Drama</span></p>
 
-	<p class="text-light text-movie text-capitalize">duración: <span></span></p>
+	<p class="text-light text-movie text-capitalize">duración: <span>???</span></p>
 
 	<p class="text-light text-movie text-capitalize">clasificación: <span>c</span></p>
 
-	<p class="text-light text-movie text-capitalize">director: <span></span></p>
-		<p class="text-light text-movie">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p class="text-light text-movie text-capitalize">director: <span>Kenneth Branagh</span></p>
+		<p class="text-light text-movie">Adaptación de 'Muerte en el Nilo' de Agatha Christie.</p>
 	</figcaption>
 	</figure>
 
@@ -943,7 +832,7 @@
           
  <div class="form-group">
             <label for="cantidad-boleto" class="col-form-label text-capitalize text-light">cantidad de boletos:</label>
-            <input type="number" class="form-control" id="cantidad-boleto" required min="1" max="280">
+            <input type="number" class="form-control" id="cantidad-boleto" min="1" max="280">
    </div>
 
     <div class="form-group">
@@ -955,11 +844,11 @@
 <div class="d-flex justify-content-between">
 <div class="form-group">
    <label for="titular-pago" class="col-form-label text-capitalize text-light">titular de tarjeta:</label>
-       <input type="text" class=" text-capitalize form-control" id="titular-pago">
+       <input type="text" class=" text-capitalize form-control" id="titular-pago" onkeypress="return validarLetra(event)">
           </div>
           <div class="form-group">
             <label for="correo" class="col-form-label text-capitalize text-light">ingrese su correo:</label>
-            <input type="email" class="form-control" id="correo" required>
+            <input type="email" class="form-control" id="correo">
           </div>
        </div>
   <div class="d-flex justify-content-between border-top border-success">
@@ -975,7 +864,7 @@
           </div>
         <div class="form-group">
         <label for="num-tarjeta"  class="col-form-label text-capitalize text-light">número de tarjeta:</label>
-           <input type="text" class=" form-control" id="num-tarjeta">
+           <input type="text" class=" form-control" id="num-tarjeta" onkeypress="return validarNum(event)">
           </div>
         </div>
     <div class="d-flex justify-content-between">
@@ -1011,11 +900,11 @@
 	
 	<p class="text-light text-movie text-capitalize">género: <span>Acción, Drama</span></p>
 
-	<p class="text-light text-movie text-capitalize">duración: <span></span></p>
+	<p class="text-light text-movie text-capitalize">duración: <span>115 min</span></p>
 
 	<p class="text-light text-movie text-capitalize">clasificación: <span>s</span></p>
 
-	<p class="text-light text-movie text-capitalize">director: <span></span></p>
+	<p class="text-light text-movie text-capitalize">director: <span>Niki Caro</span></p>
 		<p class="text-light text-movie">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</figcaption>
 	</figure>
@@ -1065,7 +954,7 @@
 <div class="d-flex justify-content-between">
 <div class="form-group">
    <label for="titular-pago" class="col-form-label text-capitalize text-light">titular de tarjeta:</label>
-       <input type="text" class=" text-capitalize form-control" id="titular-pago">
+       <input type="text" class=" text-capitalize form-control" id="titular-pago" onkeypress="return validarLetra(event)">
           </div>
           <div class="form-group">
             <label for="correo" class="col-form-label text-capitalize text-light">ingrese su correo:</label>
@@ -1085,7 +974,7 @@
           </div>
         <div class="form-group">
         <label for="num-tarjeta"  class="col-form-label text-capitalize text-light">número de tarjeta:</label>
-           <input type="text" class=" form-control" id="num-tarjeta">
+           <input type="text" class=" form-control" id="num-tarjeta" onkeypress="return validarNum(event)">
           </div>
         </div>
     <div class="d-flex justify-content-between">
@@ -1121,11 +1010,11 @@
 	
 	<p class="text-light text-movie text-capitalize">género: <span>animación, aventura, Comedia</span></p>
 
-	<p class="text-light text-movie text-capitalize">duración: <span></span></p>
+	<p class="text-light text-movie text-capitalize">duración: <span>93 min</span></p>
 
 	<p class="text-light text-movie text-capitalize">clasificación: <span>a</span></p>
 
-	<p class="text-light text-movie text-capitalize">director: <span></span></p>
+	<p class="text-light text-movie text-capitalize">director: <span>Tony Cervone</span></p>
 		<p class="text-light text-movie">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</figcaption>
 	</figure>
@@ -1163,7 +1052,7 @@
           
  <div class="form-group">
             <label for="cantidad-boleto" class="col-form-label text-capitalize text-light">cantidad de boletos:</label>
-            <input type="number" class="form-control" id="cantidad-boleto" required min="1" max="280">
+            <input type="number" class="form-control" id="cantidad-boleto" min="1" max="280">
    </div>
 
     <div class="form-group">
@@ -1175,11 +1064,11 @@
 <div class="d-flex justify-content-between">
 <div class="form-group">
    <label for="titular-pago" class="col-form-label text-capitalize text-light">titular de tarjeta:</label>
-       <input type="text" class=" text-capitalize form-control" id="titular-pago">
+       <input type="text" class=" text-capitalize form-control" id="titular-pago" onkeypress="return validarLetra(event)">
           </div>
           <div class="form-group">
             <label for="correo" class="col-form-label text-capitalize text-light">ingrese su correo:</label>
-            <input type="email" class="form-control" id="correo" required>
+            <input type="email" class="form-control" id="correo">
           </div>
        </div>
   <div class="d-flex justify-content-between border-top border-success">
@@ -1195,7 +1084,7 @@
           </div>
         <div class="form-group">
         <label for="num-tarjeta"  class="col-form-label text-capitalize text-light">número de tarjeta:</label>
-           <input type="text" class=" form-control" id="num-tarjeta">
+           <input type="text" class=" form-control" id="num-tarjeta" onkeypress="return validarNum(event)">
           </div>
         </div>
     <div class="d-flex justify-content-between">
@@ -1231,11 +1120,11 @@
 	
 	<p class="text-light text-movie text-capitalize">género: <span>Acción</span></p>
 
-	<p class="text-light text-movie text-capitalize">duración: <span></span></p>
+	<p class="text-light text-movie text-capitalize">duración: <span>163 min</span></p>
 
 	<p class="text-light text-movie text-capitalize">clasificación: <span>s</span></p>
 
-	<p class="text-light text-movie text-capitalize">director: <span></span></p>
+	<p class="text-light text-movie text-capitalize">director: <span>Cary Fukunaga</span></p>
 		<p class="text-light text-movie">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</figcaption>
 	</figure>
@@ -1273,7 +1162,7 @@
           
  <div class="form-group">
             <label for="cantidad-boleto" class="col-form-label text-capitalize text-light">cantidad de boletos:</label>
-            <input type="number" class="form-control" id="cantidad-boleto" required min="1" max="280">
+            <input type="number" class="form-control" id="cantidad-boleto" min="1" max="280">
    </div>
 
     <div class="form-group">
@@ -1285,11 +1174,11 @@
 <div class="d-flex justify-content-between">
 <div class="form-group">
    <label for="titular-pago" class="col-form-label text-capitalize text-light">titular de tarjeta:</label>
-       <input type="text" class=" text-capitalize form-control" id="titular-pago">
+       <input type="text" class=" text-capitalize form-control" id="titular-pago" onkeypress="return validarLetra(event)">
           </div>
           <div class="form-group">
             <label for="correo" class="col-form-label text-capitalize text-light">ingrese su correo:</label>
-            <input type="email" class="form-control" id="correo" required>
+            <input type="email" class="form-control" id="correo">
           </div>
        </div>
   <div class="d-flex justify-content-between border-top border-success">
@@ -1305,7 +1194,7 @@
           </div>
         <div class="form-group">
         <label for="num-tarjeta"  class="col-form-label text-capitalize text-light">número de tarjeta:</label>
-           <input type="text" class=" form-control" id="num-tarjeta">
+           <input type="text" class=" form-control" id="num-tarjeta" onkeypress="return validarNum(event)">
           </div>
         </div>
     <div class="d-flex justify-content-between">
@@ -1341,12 +1230,12 @@
 	
 	<p class="text-light text-movie text-capitalize">género: <span>Animación, aventura, drama</span></p>
 
-	<p class="text-light text-movie text-capitalize">duración: <span></span></p>
+	<p class="text-light text-movie text-capitalize">duración: <span>99 min.</span></p>
 
 	<p class="text-light text-movie text-capitalize">clasificación: <span>a</span></p>
 
-	<p class="text-light text-movie text-capitalize">director: <span></span></p>
-		<p class="text-light text-movie">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p class="text-light text-movie text-capitalize">director: <span>Jeff Fowler</span></p>
+		<p class="text-light text-movie">Sonic, vivirá aventuras y desventuras cuando conoce a su amigo humano y policía, Tom Wachowski. Sonic y Tom unirán sus fuerzas para tratar de detener los planes del malvado Dr. Robotnik.</p>
 	</figcaption>
 	</figure>
 
@@ -1383,7 +1272,7 @@
           
  <div class="form-group">
             <label for="cantidad-boleto" class="col-form-label text-capitalize text-light">cantidad de boletos:</label>
-            <input type="number" class="form-control" id="cantidad-boleto" required min="1" max="280">
+            <input type="number" class="form-control" id="cantidad-boleto" min="1" max="280">
    </div>
 
     <div class="form-group">
@@ -1395,11 +1284,11 @@
 <div class="d-flex justify-content-between">
 <div class="form-group">
    <label for="titular-pago" class="col-form-label text-capitalize text-light">titular de tarjeta:</label>
-       <input type="text" class=" text-capitalize form-control" id="titular-pago">
+       <input type="text" class=" text-capitalize form-control" id="titular-pago" onkeypress="return validarLetra(event)">
           </div>
           <div class="form-group">
             <label for="correo" class="col-form-label text-capitalize text-light">ingrese su correo:</label>
-            <input type="email" class="form-control" id="correo" required>
+            <input type="email" class="form-control" id="correo">
           </div>
        </div>
   <div class="d-flex justify-content-between border-top border-success">
@@ -1451,11 +1340,11 @@
 	
 	<p class="text-light text-movie text-capitalize">género: <span>Animación, aventura, Comedia</span></p>
 
-	<p class="text-light text-movie text-capitalize">duración: <span></span></p>
+	<p class="text-light text-movie text-capitalize">duración: <span>102 min</span></p>
 
 	<p class="text-light text-movie text-capitalize">clasificación: <span>a</span></p>
 
-	<p class="text-light text-movie text-capitalize">director: <span></span></p>
+	<p class="text-light text-movie text-capitalize">director: <span>Dan Scanlon</span></p>
 		<p class="text-light text-movie">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</figcaption>
 	</figure>
@@ -1602,7 +1491,7 @@
        <form>
           <div class="form-group">
             <label for="name" class="col-form-label text-capitalize text-light">nombre completo:</label>
-            <input type="text" class="form-control" id="name" required>
+            <input type="text" class="form-control" id="name" onkeypress="return validarLetra(event)">
           </div>
           <div class="form-group">
             <label for="edad" class="col-form-label text-capitalize text-light">edad:</label>
@@ -1632,7 +1521,7 @@
 
 		<ul class="list-unstyled foot-desc">
 			<li class="mb-2">
-                  <a href="#!" class="font-italic">Pepsi</a>
+                  <a href="#!" class="font-italic">PepsiCola</a>
               </li>
 
               <li class="mb-2">
@@ -1677,11 +1566,11 @@
        <form>
           <div class="form-group">
             <label for="name" class="col-form-label text-capitalize text-light">nombre completo:</label>
-            <input type="text" class="form-control" id="name" required>
+            <input type="text" class="form-control" id="name" onkeypress="return validarLetra(event)">
           </div>
           <div class="form-group">
             <label for="correo" class="col-form-label text-capitalize text-light">correo:</label>
-            <input type="email" class="form-control" id="correo" required>
+            <input type="email" class="form-control" id="correo">
           </div>
           <div class="form-group">
       <label for="tipo" class="col-form-label text-capitalize text-light">Tipo:</label>
@@ -1716,7 +1605,7 @@
  <a href="#!" data-toggle="modal" data-target="#donaciones">Colaboraciones y Donativos</a>
               </li>
               <li class="mb-2">
-        <a href="#!" href="promociones.html">Promociones</a>
+        <a href="promociones.html">Promociones</a>
               </li>
 		</ul>
 		</div>
@@ -1769,7 +1658,7 @@
        <form class="d-flex justify-content-center">
 
         <fieldset class="m-2 border border-warning">
-          <legend class="text-capitalize text-center text-warning">elección de boleto</legend>
+          <legend class="text-capitalize text-center text-warning font-italic">elección de boleto</legend>
        
           <div class="form-group m-2">
             <label for="pelicula" class="col-form-label text-capitalize text-light">elija la pelicula:</label>
@@ -1787,17 +1676,16 @@
         <label for="total" class="col-form-label text-capitalize text-light">monto:</label>
            <input type="number" class=" form-control" id="total">
           </div>
-          
-          <div class="ml-5 mt-4" id="enviado">
-          	<img id="proceso" src="gif/enviando.gif" width="250">
-          </div>
+           <div class="mt-4 ml-5" id="enviar-solicitud">
+      <img id="proceso" src="gif/enviando.gif" width="250">
+           </div>
         </fieldset>
 
         <fieldset class="m-2">
-          <legend class="text-capitalize text-center text-success">datos para la compra</legend>
+          <legend class="text-capitalize text-center text-success font-italic">datos para la compra</legend>
           <div class="form-group m-2">
       <label for="titular"  class="col-form-label text-capitalize text-light">titular de tarjeta:</label>
-       <input type="text" class=" text-capitalize form-control" id="titular">
+       <input type="text" class=" text-capitalize form-control" id="titular" onkeypress="return validarLetra(event)">
           </div>
           <div class="form-group">
             <label for="email" class="col-form-label text-capitalize text-light">ingrese su correo:</label>
@@ -1823,12 +1711,12 @@
           </div>
         </fieldset>
         </form>
-        <div class="bg-white mt-2" id="enviar-solicitud"></div>
+       
       </div>
       <div class="modal-footer">
       	<form id="formulary">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-        <button type="submit" class="btn btn-success text-capitalize" id="comprar-boleto-directo">comprar</button>
+        <button type="submit" class="btn btn-success text-capitalize" id="comprar-boleto-directo" onclick="EnvioCompra()">comprar</button>
     </form>
       </div>
     </div>
@@ -1838,6 +1726,9 @@
   <!--/modal comprar pelicula o boleto-->
 
 <!-- codigo js -->
+
+  <script src="sweetalert.min.js" type="text/javascript"></script> 
+
 	<script src="js/app.js" type="text/javascript"></script>
 
 	<script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
@@ -1852,6 +1743,10 @@
 
 	<script src="js/all.js" type="text/javascript"></script>
 
-  <script src="js/animacion.js" type="text/javascript"></script>
+  <script src="js/animacion.js" type="text/javascript"></script> 
+
+<!--cdn SweetAlert
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ -->
 </body>
 </html>

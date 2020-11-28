@@ -26,11 +26,31 @@ function eventListeners2(){
    contraseña.addEventListener('blur', validacion);
    
     // Boton de envio
-    formulario.addEventListener('submit', animarEnvio);
+    formulario.addEventListener('submit', enviarcompra);
 
 }
 function start(){
     //enviarcompra.disabled = true;
+}
+
+function EnvioCompra(){
+
+swal({
+  title: "¿Esta Seguro?",
+  text: "Realizará una compra a CinesTintal",
+  icon: "warning",
+  buttons: true,
+  dangerMode: true,
+})
+.then((willDelete) => {
+  if (willDelete) {
+    swal("Se ha Cancelado la Operación", {
+      icon: "success",
+    });
+  } else {
+    swal("Se Realizó la compra del Boleto Correctamente!");
+  }
+});
 }
 
 function animarEnvio(e){
@@ -43,7 +63,7 @@ function animarEnvio(e){
     envioAnimate.style.width = '250px';
     setTimeout(function(){
         proceso.style.display = 'none';
-        document.querySelector('#enviado').appendChild(envioAnimate);
+        document.querySelector('#enviar-solicitud').appendChild(envioAnimate);
         setTimeout(function(){
             envioAnimate.remove();
             formulario.reset();
