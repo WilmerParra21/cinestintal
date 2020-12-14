@@ -293,7 +293,7 @@
 
 		<ul class="list-unstyled foot-desc">
 			<li class="mb-2">
-                  <a href="#!" class="font-italic">Pepsi</a>
+                  <a href="#!" class="font-italic">PepsiCola</a>
               </li>
 
               <li class="mb-2">
@@ -304,7 +304,7 @@
                   <a href="#!" class="font-italic">Nestle</a>
               </li>
               <li class="mb-2">
-                  <a href="#!" class="font-italic">Arturos</a>
+                  <a href="#!" class="font-italic">kFC</a>
               </li>
 		</ul>
 		</div>
@@ -338,11 +338,11 @@
        <form>
           <div class="form-group">
             <label for="name" class="col-form-label text-capitalize text-light">nombre completo:</label>
-            <input type="text" class="form-control" id="name" required>
+            <input type="text" class="form-control" id="name" onkeypress="return validarLetra(event)">
           </div>
           <div class="form-group">
             <label for="correo" class="col-form-label text-capitalize text-light">correo:</label>
-            <input type="email" class="form-control" id="email" required>
+            <input type="email" class="form-control" id="correo">
           </div>
           <div class="form-group">
       <label for="tipo" class="col-form-label text-capitalize text-light">Tipo:</label>
@@ -377,7 +377,7 @@
  <a href="#!" data-toggle="modal" data-target="#donaciones">Colaboraciones y Donativos</a>
               </li>
               <li class="mb-2">
-        <a href="#!" href="promociones.html">Promociones</a>
+        <a href="promociones.html">Promociones</a>
               </li>
 		</ul>
 		</div>
@@ -422,7 +422,6 @@
 
     <h5 class="modal-title text-light font-italic text-center text-capitalize ml-5 pl-5" id="exampleModalLabel">compra de boletos</h5>
        
-
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
      <span aria-hidden="true" class="text-white">&times;</span>
         </button>
@@ -431,41 +430,42 @@
        <form class="d-flex justify-content-center">
 
         <fieldset class="m-2 border border-warning">
-          <legend class="text-capitalize text-center text-warning">elección de boleto</legend>
+          <legend class="text-capitalize text-center text-warning font-italic">elección de boleto</legend>
        
           <div class="form-group m-2">
             <label for="pelicula" class="col-form-label text-capitalize text-light">elija la pelicula:</label>
-           <select id="pelicula" class="w-100 p-2 text-capitalize">
+           <select id="pelicula" class="w-100 p-2 text-capitalize" id="pelicula">
            <option selected disabled>--Seleccione--</option>
            <option value="" class="text-capitalize">bad boys: para siempre</option>
             <option value="" class="text-capitalize">el hombre invisible</option>
            </select>
           </div>
            <div class="form-group m-2">
-            <label for="cantidad-boleto" class="col-form-label text-capitalize text-light">cantidad de boletos:</label>
-            <input type="number" class="form-control" id="cantidad-boleto" required min="1" max="280">
+            <label for="cantidadbolet" class="col-form-label text-capitalize text-light">cantidad de boletos:</label>
+            <input type="number" class="form-control" id="cantidadbolet" min="1" max="280">
           </div>
            <div class="form-group m-2">
-        <label for="monto" class="col-form-label text-capitalize text-light">monto:</label>
-           <input type="number" class=" form-control" id="monto">
+        <label for="total" class="col-form-label text-capitalize text-light">monto:</label>
+           <input type="number" class=" form-control" id="total">
           </div>
-          <div class="m-2"></div>
+           <div class="mt-4 ml-5" id="enviar-solicitud">
+      <img id="proceso" src="gif/enviando.gif" width="250">
+           </div>
         </fieldset>
 
-
         <fieldset class="m-2">
-          <legend class="text-capitalize text-center text-success">datos para la compra</legend>
+          <legend class="text-capitalize text-center text-success font-italic">datos para la compra</legend>
           <div class="form-group m-2">
-      <label for="titular-pago"  class="col-form-label text-capitalize text-light">titular de tarjeta:</label>
-       <input type="text" class=" text-capitalize form-control" id="titular-pago">
+      <label for="titular"  class="col-form-label text-capitalize text-light">titular de tarjeta:</label>
+       <input type="text" class=" text-capitalize form-control" id="titular" onkeypress="return validarLetra(event)">
           </div>
           <div class="form-group">
-            <label for="correo" class="col-form-label text-capitalize text-light">ingrese su correo:</label>
-            <input type="email" class="form-control" id="correo" required>
+            <label for="email" class="col-form-label text-capitalize text-light">ingrese su correo:</label>
+            <input type="email" class="form-control" id="email">
           </div>
           <div class="form-group m-2">
       <label for="tipo" class="col-form-label text-capitalize text-light">Tipo de tarjeta:</label>
-      <select id="tipo-tarjeta" class="w-100 p-2 form-control">
+      <select id="tipotarget" class="w-100 p-2 form-control">
       <option value="0" selected disabled>--Seleccione--</option>
     <option value="mastercard">MasterCard</option>
     <option value="maestro">Maestro</option>
@@ -474,20 +474,22 @@
             </select>
           </div>
           <div class="form-group m-2">
-        <label for="num-tarjeta"  class="col-form-label text-capitalize text-light">número de tarjeta:</label>
-           <input type="text" class=" form-control" id="num-tarjeta">
+        <label for="tarjeta"  class="col-form-label text-capitalize text-light">número de tarjeta:</label>
+           <input type="text" class=" form-control" id="tarjeta" onkeypress="return validarNum(event)">
           </div>
            <div class="form-group m-2">
-        <label for="clave"  class="col-form-label text-capitalize text-light">clave:</label>
-           <input type="password" class=" form-control" id="clave">
+        <label for="contraseña"  class="col-form-label text-capitalize text-light">clave:</label>
+           <input type="password" class=" form-control" id="contraseña">
           </div>
         </fieldset>
         </form>
-        <div class="bg-white mt-2" id="enviar-solicitud"></div>
+       
       </div>
       <div class="modal-footer">
+      	<form id="formulary">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-        <button type="button" class="btn btn-success text-capitalize">comprar</button>
+        <button type="submit" class="btn btn-success text-capitalize" id="comprar-boleto-directo" onclick="enviar()">comprar</button>
+    </form>
       </div>
     </div>
   </div>
@@ -496,6 +498,9 @@
   <!--/modal comprar pelicula o boleto-->
 
 <!-- codigo js -->
+
+  <script src="js/animacion.js" type="text/javascript"></script> 
+  
 	<script src="js/app.js" type="text/javascript"></script>
 
 	<script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>

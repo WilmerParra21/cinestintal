@@ -32,26 +32,25 @@ function eventListeners2(){
 function start(){
     //enviarcompra.disabled = true;
 }
-
-function EnvioCompra(){
-
-swal({
-  title: "¿Esta Seguro?",
-  text: "Realizará una compra a CinesTintal",
+function enviar(){
+    swal({
+  title: "¿Está seguro?",
+  text: "Realizará una compra a CinesTintal!",
   icon: "warning",
   buttons: true,
   dangerMode: true,
 })
 .then((willDelete) => {
   if (willDelete) {
-    swal("Se ha Cancelado la Operación", {
+    swal("Muchas gracias por su comprar revise su correo!", {
       icon: "success",
     });
   } else {
-    swal("Se Realizó la compra del Boleto Correctamente!");
+    swal("Se ha Cancelado la Operación");
   }
 });
-}
+
+  }
 
 function animarEnvio(e){
     const proceso = document.querySelector('#proceso');
